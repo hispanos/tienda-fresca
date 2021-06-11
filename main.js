@@ -7,7 +7,7 @@ const products = new Products();
 const PATH = window.location.pathname;
 document.addEventListener('DOMContentLoaded', () => {
     //If path is index
-    if(PATH === '/' || PATH === '/index.html') {
+    if(PATH === '/' || PATH === '/index.html' || PATH === '/tienda-fresca' || PATH === '/tienda-fresca/index.html') {
         renderDetailsProduct();
     }
 
