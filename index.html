@@ -7,6 +7,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/vegan-style-personal-use" rel="stylesheet" />
 
     <link rel="stylesheet" href="./style.css">
     <title>Príncipe Fresco</title>
@@ -16,25 +17,38 @@
         <!-- Denisse -->
         <nav class="menu">
             <!-- Denisse -->
+            <ul id="nav-link">
+                <li class="list"><a id="logo" class="link" href="#">Príncipe fresco</a></li>
+                <div>
+                    <li class="list"><a class="link" href="#">SHOP</a></li>
+                    <li class="list"><a class="link" href="#">COLLECTIONS</a></li>
+                </div>
+                <div>
+                    <li class="list"><a class="link" href="#"></a><img src="./images/icons8-user 2.svg" alt=""></li>
+                    <li class="list"><a class="link" href="#"></a><img src="./images/icons8-user 3.svg" alt=""></li>
+                </div>
+            </ul>
         </nav>
         <article id="main-principal">
-            <div class="main-section-images">
+            <div id="main-section-images">
                 <!-- Denisse -->
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laboriosam mollitia quo fugit aut odio nostrum repudiandae tempora! Inventore dignissimos, consequuntur obcaecati harum laborum perspiciatis tempore cumque similique ab id.
-                </p>
+                <div id="container-2">
+                    <div id="contendor-1">
+                        <!-- Images Small -->
+                    </div>
+                    <div id="contenedor-2">
+                        <!-- Images Big -->
+                    </div>
+                </div>
             </div>
-            <div class="main-section-details">
+            <div id="main-section-details">
                 <!-- Mailer -->
-                <h2 id="main-name-article">Nombre del artículo</h2>
-                <span id="main-price-article">$ 50.000</span>
+                <h2 id="main-name-article"></h2>
+                <span id="main-price-article"></span>
                 <div id="main-sizes">
                     <span id="sizes-tag">SIZE</span>
                     <div id="sizes-select">
-                        <span class="size-selected">S</span>
-                        <span class="size-inactive">M</span>
-                        <span class="size-inactive">L</span>
-                        <span class="size-inactive">XL</span>
+                        <!-- Load from Javascript -->
                     </div>
                 </div>
                 <div id="main-buttons-actions">
@@ -42,14 +56,43 @@
                     <button id="btn-buy-now" class="btn">BUY IT NOW</button>
                 </div>
                 <p id="main-text-description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus dolorum dolore vitae similique! Molestiae eum odio, fuga aliquid laudantium aut praesentium, hic cum ipsam, reiciendis iusto numquam esse nesciunt enim.
                 </p>
                 <a href="#" id="main-link-sizing">Click for Sizing</a>
             </div>
         </article>
+        <div id="container-3">
+            <div>
+                <h1 id="list-title">YOU MAY ALSO LIKE</h1>
+            </div>
+            <div id="imagenes-opcion">
+                <!-- Load from Javascript -->
+            </div>
+        </div>
         <div id="footer">
             <!-- Michael -->
+            <img src="./images/cover.png" alt="Imagen del Príncipe" class="img-cover-footer" />
+            <div class="prince">
+                <h2 id="title-prince">Príncipe fresco</h2>
+                <ul class="tab">
+                    <li class="li-footer">
+                        <img
+                        id="icon-play"
+                        src="./images/icons7-play_button 2.png"
+                        alt=""
+                        />
+                    </li>
+                    <li class="li-footer">
+                        <img
+                        id="icon-face"
+                        src="./images/icons8-play_button 12.png"
+                        alt=""
+                        />
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
+
+    <script src="./main.js" type="module"></script>
 </body>
 </html>

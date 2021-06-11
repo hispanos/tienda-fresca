@@ -3,16 +3,23 @@ body {
     margin: 16px 0px;
 }
 
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
 #main-principal {
     display: flex;
     flex-direction: row;
+    margin-left: 40px;
 }
 
-.main-section-details {
+#main-section-details {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
     margin-right: 40px;
+    width: 35%;
 }
 
 #main-name-article {
@@ -53,6 +60,10 @@ body {
     margin: 16px 0;
 }
 
+.size:hover {
+    cursor: pointer;
+}
+
 .size-selected {
     width: 64px;
     height: 64px;
@@ -81,6 +92,10 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #1D1D1D;
+}
+
+#main-section-images {
+    width: 65%;
 }
 
 #main-buttons-actions {
@@ -130,4 +145,179 @@ body {
     text-decoration-line: underline;
     color: #1D1D1D;
     margin: 40px 0;
+}
+
+#nav-link{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+.list{
+    display: inline-block;
+    padding: 20px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    font-family: Vegan Style Personal Use;
+    color: #FF4C13;
+    font-size: 40px;
+}
+#container-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 100%;
+}
+#contenedor-2{
+    width: 70%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+#contendor-1{
+    width: 30%;
+    padding-right: 40px;
+    flex-shrink: 1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.img-big{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+.img-small{
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 20px;
+    margin-left: 25%;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+
+.img-cover-footer {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.prince{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color:rgba(29, 29, 29, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+#title-prince{
+    color:rgba(255, 76, 19, 1);
+    font-size: 25px;
+    font-family: 'Vegan Style Personal Use', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px;
+}
+
+#icon-face{
+    width: 18px;
+    height: 18px;
+}
+
+#icon-play{
+    width: 18px;
+    height: 18px;
+}
+
+.tab {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.li-footer {
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+#list-title {
+    text-align: center;
+}
+#imagenes-opcion {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-list {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.contenedor-product-list {
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-title-list {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #1D1D1D;
+    margin: 12px 0;
+}
+
+.contenedor-product-list:hover {
+    cursor: pointer;
+}
+
+
+@media (max-width: 360px) {
+    #nav-link{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+        margin-top: 25px;
+    }
+    #contenedor-2{
+        padding-right: 0;
+        width: 100%;
+    }
+    #contenedor-1{
+        display: none;
+    }
+    .img-small{
+        display: none;
+    }
 }
