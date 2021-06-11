@@ -130,7 +130,10 @@ export default class Products {
         let sizes = '';
         detailsProduct.sizes.forEach(size => {
             sizes += `
-            <span class="size size-inactive">${size}</span>
+            
+            <label for="${size}" class="size size-inactive">${size}
+            <input type="radio" id="${size}" class="input-size" name="size" value="${size}" style="display: none">
+            </label>
             `;
         });
         this.divSizes.innerHTML = sizes;

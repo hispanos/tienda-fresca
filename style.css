@@ -478,7 +478,17 @@ body {
   
 /* End Modal Styles */
 
+.container-table-cart {
+    width: 100%;
+}
 
+.table-cart {
+    width: 100%;
+}
+
+.colum-cart {
+    width: 25%;
+}
 
 
 @media (max-width: 650px) {
