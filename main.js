@@ -36,7 +36,7 @@ const renderDetailsProduct = () => {
 
     //Modal:
     const cerrar = document.querySelectorAll(".close")[0];
-    const abrir = document.getElementById('btn-add-cart');
+    const abrir = document.getElementById('btn-buy-now');
     const modal = document.getElementById('modal');
     const modalC = document.getElementById('modal-container');
 
