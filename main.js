@@ -1,7 +1,9 @@
+import Modal from "./scripts/Modal.js";
 import Products from "./scripts/Products.js";
 
 //Instance of Class
 const products = new Products();
+const modalClass = new Modal();
 
 //Functions by path
 const PATH = window.location.pathname;
@@ -31,6 +33,15 @@ const renderDetailsProduct = () => {
     divListProducts.forEach(div => {
         div.addEventListener('click', (e) => { onClickProduct(e) })
     });
+
+    //Modal:
+    const cerrar = document.querySelectorAll(".close")[0];
+    const abrir = document.getElementById('btn-add-cart');
+    const modal = document.getElementById('modal');
+    const modalC = document.getElementById('modal-container');
+
+    modalClass.functionsModal(cerrar, abrir, modal, modalC);
+    
 }
 
 const onClickProduct = (e) => {

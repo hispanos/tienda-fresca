@@ -145,7 +145,7 @@ export default class Products {
             </div>
             `;
             imagesBig += `
-            <div>
+            <div class="mySlides fade">
                 <img class="img-big" src="${image.url}" alt="${image.description}">
             </div>
             `;

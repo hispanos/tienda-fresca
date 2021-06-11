@@ -38,6 +38,8 @@
                     </div>
                     <div id="contenedor-2">
                         <!-- Images Big -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                 </div>
             </div>
@@ -96,6 +98,38 @@
             <span>MENU</span>
         </div>
     </main>
+
+    <!-- Modal Buy -->
+    <div class="modal-container" id="modal-container">
+        <div class="modal modal-close" id="modal">
+          <p class="close">X</p>
+          <div class="item">
+            <div class="image">
+              <img src="./images/img1.png" alt="Imagen" />
+            </div>
+            <div class="image-text">
+              <h2>Crown Sweatshirt</h2>
+              <p>S $85.00</p>
+            </div>
+            <div class="remove">
+              <p>1</p>
+              <p>Remove</p>
+            </div>
+          </div>
+          <div class="subtotal">
+            <p>Subtotal</p>
+            <p>$85.00</p>
+            <p>Shipping, taxes, and discount codes calculated at checkout.</p>
+          </div>
+          <div class="buy-now">
+            <button class="btn-modal">CHECK OUT</button>
+            <h3>
+              Please Note: All items are pre-order and will ship in 6-10 weeks.
+              Guaranteed holiday delivery.
+            </h3>
+          </div>
+        </div>
+    </div>
 
     <script src="./main.js" type="module"></script>
 </body>
