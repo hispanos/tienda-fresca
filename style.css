@@ -1,0 +1,133 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 16px 0px;
+}
+
+#main-principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-section-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+#main-name-article {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: #1D1D1D;
+    margin: 16px 0px;
+    padding: 0 0;
+}
+
+#main-price-article {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    color: #1D1D1D;
+}
+
+#main-sizes {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#sizes-tag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+#sizes-select {
+    display: flex;
+    flex-direction: row;
+    margin: 16px 0;
+}
+
+.size-selected {
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #1D1D1D;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+.size-inactive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1D1D1D;
+}
+
+#main-buttons-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    height: 56px;
+    margin: 8px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+#btn-add-cart {
+    background: #1D1D1D;
+}
+
+#btn-buy-now {
+    background: #4276FB;
+}
+
+#main-text-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #1D1D1D;
+}
+
+#main-link-sizing {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration-line: underline;
+    color: #1D1D1D;
+    margin: 40px 0;
+}
