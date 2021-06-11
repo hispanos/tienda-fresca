@@ -22,4 +22,21 @@ const renderDetailsProduct = () => {
 
     //Render list products
     products.renderListProducts();
+
+    //Event click over list products
+    const divListProducts = document.querySelectorAll('.contenedor-product-list');
+    divListProducts.forEach(div => {
+        div.addEventListener('click', (e) => { onClickProduct(e) })
+    });
+}
+
+const onClickProduct = (e) => {
+    let idProduct = '';
+    if (e.target.getAttribute('key')) {
+        idProduct = e.target.getAttribute('key');
+    }else {
+        idProduct = e.target.parentElement.getAttribute('key');
+    }
+
+    window.location.href = `?idProduct=${idProduct}`;
 }
