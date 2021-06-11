@@ -16,7 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
 //Show details's Product
 const renderDetailsProduct = () => {
     let params = new URLSearchParams(location.search);
-    const idProduct = parseInt(params.get('idProduct'));
+    let idProduct = parseInt(params.get('idProduct'));
+    if (isNaN(idProduct)) {
+        idProduct = 1;
+    }
     const detailsProduct = products.getDetailsProduct(idProduct);
     products.renderDetails(detailsProduct);
 
